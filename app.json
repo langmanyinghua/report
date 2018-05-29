@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/report/report",
     "pages/index/index",
     "pages/logs/logs",
     "pages/me/me"
@@ -15,7 +16,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/report/report",
         "text": "报备",
         "iconPath": "images/index.png",
         "selectedIconPath": "images/index_selected.png"
@@ -23,7 +24,7 @@
       {
         "pagePath": "pages/me/me",
         "text": "我的",
-        "iconPath":"images/me.png",
+        "iconPath": "images/me.png",
         "selectedIconPath": "images/me_selected.png"
       }
     ]
