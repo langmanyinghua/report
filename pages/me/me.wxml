@@ -1,0 +1,28 @@
+<!--pages/me/me.wxml-->
+<view class='head'>
+  <image class='avatar' bindtap='previewImage' src='{{imagesrc}}' ></image>
+  <text>潘来星</text>
+  <text>用户名</text>
+  <icon type='success' size='1'></icon>
+</view>
+
+<view>
+  <checkbox-group>
+    <checkbox value='2' checked="{{false}}">香蕉</checkbox>
+    <checkbox value='2' checked="{{true}}">香蕉</checkbox>
+  </checkbox-group>
+  <label wx:if="{{isShow}}">开启通知</label>
+  <switch checked='{{isShow}}' bindchange='change'></switch>
+  
+  <label>年龄</label>
+  <slider value='20' show-value ></slider>
+  <text selectable>还记得当天旅馆的门牌</text>
+
+  <button bindtap='openNewPages'>打开新页面</button>
+  <button bindtap='redirect'>页面重定向</button>
+  <button bindtap='chooseImage'>选择图片</button>
+
+  <button bindtap='saveData'>保存数据</button>
+</view>
+
+

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view>{{title}}</view>
+<view>
+  <view class="userinfo">
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!-- <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <button bindtap='changeMotto'>修改</button>
+  </view>
+  <button bindtap='showToast' size='mini' type='primary' loading='true' >显示吐司</button>
+  <button bindtap='getAddress' size='default' type='default' >收货地址</button>
+  <button open-type='openSetting' bindopensetting="openSetting"  type='warn'>打开设置</button>
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> 
+    获取电话
+  </button>
+  <button bindtap='login' >登录</button>
+
+  <button bindtap='callphone' >打电话</button>
+  <button bindtap='scan'>扫描二维码</button>
+
+  <slider bindchange='ScreenBrightnessChange' max='1' min='0' step='0.01' value='{{ScreenBrightness}}'></slider>
+</view>
