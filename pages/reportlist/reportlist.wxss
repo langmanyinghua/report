@@ -1,0 +1,24 @@
+/* pages/reportlist/reportlist.wxss */
+
+.head {
+  width: 100%;
+  height: 45px;
+  background-color: #f00;
+  display: flex;
+}
+
+.title {
+  display: flex;
+  font-size: 13px;
+  align-items: Center;
+  justify-content: center;
+}
+
+.add {
+  width: 30px;
+  height: 30px;
+  align-items: Center;
+  justify-content: center;
+  margin-right: 0px;
+  float: right;
+}

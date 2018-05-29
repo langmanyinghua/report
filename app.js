@@ -44,6 +44,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    token: "123"
+    token: "123",
+    isLogin: false
   }
 })

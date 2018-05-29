@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/reportlist/reportlist",
     "pages/report/report",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/me/me"
+    "pages/me/me"    
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -16,7 +17,7 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/report/report",
+        "pagePath": "pages/reportlist/reportlist",
         "text": "报备",
         "iconPath": "images/index.png",
         "selectedIconPath": "images/index_selected.png"
