@@ -1,6 +1,9 @@
 //index.js
+const http = require("../../utils/http.js")
+
 //获取应用实例
 const app = getApp()
+
 
 Page({
   data: {
@@ -74,6 +77,10 @@ Page({
         console.log(" getSetting ", res)
       }
     })
+
+    // 获取token
+    http.getReport()
+
   },
   onShow: function () {
     console.log("index onShow")

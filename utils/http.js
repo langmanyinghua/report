@@ -1,4 +1,5 @@
 const IP = "https://www.amazingfuture.cn"
+const app = getApp()
 
 
 //*******************  登录，注册 start ******************* //
@@ -16,6 +17,12 @@ function login(username, password) {
 
 //*******************  登录，注册 end ******************* //
 
+function getReport() {
+  var token = getApp().globalData.token
+  console.log("token : ", token)
+}
+
+
 
 //*******************  工具类 start ******************* //
 
@@ -30,7 +37,7 @@ function upload(filePath) {
     filePath: filePath,
     name: 'file',
     header: {
-      token: getApp.globalData.token
+      token: getApp().globalData.token
     },
     success(res) {
       console.log("上传结果 : ", res)
@@ -42,10 +49,10 @@ function upload(filePath) {
 
 
 
-
 /**
  * 暴露接口
  */
 module.exports = {
-  login: login
+  login: login,
+  getReport: getReport
 }

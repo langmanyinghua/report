@@ -17,14 +17,14 @@
       {
         "pagePath": "pages/index/index",
         "text": "报备",
-        "iconPath": "pages/images/index.png",
-        "selectedIconPath": "pages/images/index_selected.png"
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index_selected.png"
       },
       {
         "pagePath": "pages/me/me",
         "text": "我的",
-        "iconPath":"pages/images/me.png",
-        "selectedIconPath": "pages/images/me_selected.png"
+        "iconPath":"images/me.png",
+        "selectedIconPath": "images/me_selected.png"
       }
     ]
   },
